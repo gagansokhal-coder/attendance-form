@@ -31,7 +31,7 @@ app.post("/submit",async (req,res)=>{
     })
 
 
-    res.redirect("https://69555df858638b30e39e20e9--peppy-chaja-ccc735.netlify.app/")
+    res.redirect("/success.html")
 
 })
 
