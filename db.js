@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 
 
-mongoose.connect("mongodb+srv://grdb:1008Gagan%401008@cluster1.rvfoweo.mongodb.net/attendance_form");
+mongoose.connect("process.env.MONGO_URL");
 const createschema=new mongoose.Schema({
     name:String,
     roll:Number,
