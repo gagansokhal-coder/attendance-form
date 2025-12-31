@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 
 
-mongoose.connect("process.env.MONGO_URL");
+mongoose.connect(process.env.MONGO_URL);
 const createschema=new mongoose.Schema({
     name:String,
     roll:Number,
