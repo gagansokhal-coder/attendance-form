@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance Shortage Form</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attendance Shortage Form</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-    <div id="head">
-        FOR SHORTAGE OF ATTENDANCE
-    </div>
+<h2>FOR SHORTAGE OF ATTENDANCE</h2>
 
-    <form id="myForm"  action="https://attendance-form-f60e.onrender.com/submit" method="post">
+<form
+  action="https://attendance-form-f60e.onrender.com/submit"
+  method="post"
+>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  <input type="text" name="name" placeholder="Name" required />
+  <input type="number" name="roll" placeholder="Roll No" required />
+  <input type="number" name="attendance" placeholder="Attendance %" required />
 
-        <label for="roll">Roll No:</label>
-        <input type="number" id="roll" name="roll" placeholder="Enter roll number" required>
+  <textarea name="reason" placeholder="Reason" required></textarea>
 
-        <label for="attendance">Your Attendance (%):</label>
-        <input type="number" id="attendance" name="attendance" placeholder="Attendance %" required>
+  <select name="branch" required>
+    <option value="">Select Branch</option>
+    <option value="CSE">CSE</option>
+    <option value="IT">IT</option>
+    <option value="DSE">DSE</option>
+    <option value="Mechanical">Mechanical</option>
+  </select>
 
-        <label for="reason">Reason for low Attendance:</label>
-        <textarea id="reason" name="reason" placeholder="Enter reason" required></textarea>
-
-        <label for="branch">Your Branch:</label>
-        <select id="branch" name="branch" required>
-            <option value="">--Select Branch--</option>
-            <option value="CSE">CSE</option>
-            <option value="IT">IT</option>
-            <option value="DSE">DSE</option>
-            <option value="Mechanical">Mechanical</option>
-        </select>
-
-        <button type="submit">SUBMIT</button>
-
-    </form>
-   
-  
+  <button type="submit">Submit</button>
+</form>
 
 </body>
 </html>
