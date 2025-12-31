@@ -1,7 +1,14 @@
 const mongoose=require("mongoose");
 
-
-mongoose.connect(process.env.MONGO_URL);
+async function connectDB(){
+    try{
+await mongoose.connect(process.env.MONGO_URL);
+console.log("mongodb connected");
+}catch(err){
+    console.error("mongo error",err);
+}
+}
+connectDB();
 const createschema=new mongoose.Schema({
     name:String,
     roll:Number,
