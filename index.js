@@ -4,7 +4,7 @@
 const express=require("express")
 
 const app=express();
-app.use(express.static("public"));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -31,9 +31,7 @@ app.post("/submit",async (req,res)=>{
     })
 
 
-    res.json({
-        msg:"form submitted successfully"
-    })
+    res.redirect("https://6955543c75be47385bf3719c--peppy-chaja-ccc735.netlify.app/")
 
 })
 
